@@ -1,0 +1,20 @@
+* {
+  background: url(images/ball2.jpg) no-repeat center fixed;
+  background-size: cover;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif; }
+  * body {
+    padding-top: 10em;
+    height: auto; }
+    * body .typewrite {
+      font-weight: bolder;
+      color: black; }
+    * body footer {
+      padding-top: 15rem;
+      padding-bottom: 00.08rem; }
+      * body footer p, * body footer a {
+        font-weight: bold;
+        color: white;
+        margin: 0.08rem; }
+
+/*# sourceMappingURL=typewriter.css.map */

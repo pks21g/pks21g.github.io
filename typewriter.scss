@@ -1,0 +1,32 @@
+$h1Color:black;
+$footerColor:white;
+$fontStyle: 'Times New Roman', Times, serif;
+$btextAlign: center;
+
+*{
+    background: url(images/ball2.jpg) no-repeat center fixed;
+    background-size: cover;
+    text-align: $btextAlign;
+    font-family: $fontStyle;
+
+    body{
+        padding-top:10em;
+        height: auto;
+
+        .typewrite{
+            font-weight: bolder;
+            color:$h1Color;
+        }
+
+        footer{
+            padding-top: 15rem;
+            padding-bottom: 00.08rem;
+            p , a{
+            font-weight: bold;
+            color: $footerColor;
+            margin: 0.08rem;
+            }
+        }
+
+    }
+}
