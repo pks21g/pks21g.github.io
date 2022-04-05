@@ -1,6 +1,8 @@
 * {
   background: url(ball2.jpg) no-repeat center fixed;
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   text-align: center;
   font-family: "Times New Roman", Times, serif; }
   * body {
