@@ -1,32 +1,47 @@
-$h1Color:black;
-$footerColor:white;
-$fontStyle: 'Times New Roman', Times, serif;
+$h1Color: black;
+$footerColor: white;
+$fontStyle: "Times New Roman", Times, serif;
 $btextAlign: center;
 
-*{
-    background: url(ball2.jpg) no-repeat center fixed;
-    background-size: cover;
-    text-align: $btextAlign;
-    font-family: $fontStyle;
+* {
+  background: url(ball2.jpg) no-repeat center fixed;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: $btextAlign;
+  font-family: $fontStyle;
 
-    body{
-        padding-top:10em;
-        height: auto;
+  body {
+    padding-top: 10%;
+    height: auto;
+    margin: 0;
 
-        .greet{
-            font-weight: bolder;
-            color:$h1Color;
-        }
-
-        footer{
-            padding-top: 15rem;
-            padding-bottom: 00.08rem;
-            p , a{
-            font-weight: bold;
-            color: $footerColor;
-            margin: 0.08rem;
-            }
-        }
-
+    .greet {
+      font-weight: bolder;
+      color: $h1Color;
     }
+    .head {
+      padding-left: 15%;
+      padding-right: 15%;
+      width: 70%;
+      align-content: center;
+    }
+
+    .foot {
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+      right: 0;
+      height: 20%;
+      width: 100%;
+      color: #fff;
+
+      p,
+      a {
+        font-weight: bold;
+        color: $footerColor;
+        margin: 0.08rem;
+      }
+    }
+  }
 }
