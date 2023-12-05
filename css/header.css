@@ -1,0 +1,41 @@
+.header{
+    height: 80px;
+    background-color: black;
+    opacity: .8;
+    position: sticky;
+    top:0;
+    z-index: 400;
+    margin-bottom: 70px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    padding-left: 20px;
+}
+
+.navbar .flex{
+    padding: 10px 0;
+    margin: 5px, 0;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+
+}
+
+li .link{
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+li .link:hover{
+    color:rgb(190, 11, 11);
+    font-weight: 400px;
+}

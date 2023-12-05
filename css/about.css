@@ -1,0 +1,24 @@
+.about-image{
+    margin-top: 60px;
+    min-width: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 70%;
+    gap:50px;
+    height:100%;
+    color:black;
+    
+}
+
+.about{
+    background-color: white;
+    box-shadow: -2px 4px 46px -15px #6b696b;
+    /* opacity: .7; */
+    position:relative;
+    padding: 40px 40px;
+    top: -70px;
+}

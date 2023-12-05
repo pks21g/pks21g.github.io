@@ -1,0 +1,20 @@
+.footer{
+    position: relative;
+    height: 80px;
+    top:40px;
+    background-color: rgb(0, 0, 0);
+    opacity: .8;
+    z-index: 400;
+}
+
+.navbarfooter ul a{
+    color: #fff;
+    font-size: 1rem;
+    margin: 5px;
+    transition: .2s ease-in-out;
+}
+.navbarfooter ul a:hover{
+    font-size: .95rem;
+
+    color: rgb(254, 25, 25);
+}
