@@ -14,7 +14,7 @@
   font-size: 1.4rem;
 }
 .logo h1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .navbar .flex{
@@ -35,6 +35,8 @@ li .link:hover{
     color:black;
     font-weight: 400px;
 }
+
+/* about */
 
 
 /* skills */
