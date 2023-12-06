@@ -1,24 +1,14 @@
 .projects{
     position: relative;
-    top: 70px;
-    margin-top:50px;
-    margin-bottom: 120px;
-    background-color: #fff;
-    padding: 40px 0;
-    transform: skewY(11deg);
+    background-color: black;
+    margin:50px 40px;
+    padding: 30px 30px;
     z-index: -100;
 
 }
 
-
-.grid-3{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap:50px;
-    transform: skewY(-11deg);
-
+.projects > h1{
+    margin:40px 0;
 }
 
 .project-image {
@@ -34,9 +24,11 @@
 .project-item{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 400px;
+    width:307px;
     background-color: rgb(34, 34, 255);
+    /* padding:40px; */
 }
 
 a .hob:hover{

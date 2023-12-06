@@ -1,12 +1,24 @@
 .footer{
     position: relative;
     height: 80px;
-    top:40px;
-    background-color: rgb(0, 0, 0);
-    opacity: .8;
-    z-index: 400;
-}
 
+/* 
+    background: #3E5151;  
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151); 
+    background: linear-gradient(to left, #DECBA4, #3E5151);  */
+
+    background-color: rgb(241, 6, 6);
+    opacity: .8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* z-index: 400; */
+}
+.navbarfooter ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
 .navbarfooter ul a{
     color: #fff;
     font-size: 1rem;
@@ -15,6 +27,5 @@
 }
 .navbarfooter ul a:hover{
     font-size: .95rem;
-
-    color: rgb(254, 25, 25);
+    color: black
 }

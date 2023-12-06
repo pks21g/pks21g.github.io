@@ -1,12 +1,17 @@
-@media(max-width:868px){
+@media(max-width:968px){
 
+    .container{
+        max-width: 900;
+        padding:0 100px;
+        margin:0 auto;
+    }
+
+
+    /* header section */
 
     .header{
         height: 130px;
-        background: #3C3B3F;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        opacity: .5;
+        background-color: black;
         position: sticky;
         top:0;
         z-index: 400;
@@ -20,4 +25,54 @@
     .navbar .flex{
         margin-top: 40px;
     }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .grid .image-div{
+        display: none;
+    }
+
+  .subheading{
+    text-align: start;
+  }
+
+  /* skills */
+
+  .grid-3, .projects .grid-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .card-image{
+    height: 30px;
+    width:50%;
+    border-radius: 30px;
+    box-shadow: 0 0 3px 3px rgba(1,12,13, .5);
+    
+}
+
+.card-1, .card-2, .card-3{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: auto;
+    color: #333;
+}
+
+.project-item{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
 }

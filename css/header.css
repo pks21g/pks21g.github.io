@@ -1,7 +1,10 @@
 .header{
     height: 80px;
-    background-color: black;
-    opacity: .8;
+   
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* opacity: .8; */
     position: sticky;
     top:0;
     z-index: 400;
@@ -23,7 +26,7 @@
     margin: 5px, 0;
 }
 
-ul{
+.navbar ul{
     display: flex;
     list-style-type: none;
 
@@ -36,6 +39,6 @@ li .link{
 }
 
 li .link:hover{
-    color:rgb(190, 11, 11);
+    color:black;
     font-weight: 400px;
 }
