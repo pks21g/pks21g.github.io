@@ -1,0 +1,40 @@
+@media (max-width:620px) {
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 10px;
+    }
+    .navbar h1{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .navbar li a{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .new-album{
+        margin-top: 10px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap:10px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+    .new-album-txt{
+        padding-top: 30px;
+        height: 300px;
+        width: auto;
+    }
+
+}
