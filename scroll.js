@@ -24,5 +24,3 @@ function handleClick(e) {
         inline: "nearest"
     });
   }
-
-
