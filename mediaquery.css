@@ -1,0 +1,33 @@
+ @media(min-width: 768px){
+   .projects{
+    background-color: rgb(52, 49, 49);
+    display: grid;
+    gap:40px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+   }
+   .about{
+    display: flex;
+    height:100%;
+   }
+   .hero-text{
+    height:100vh;
+   }
+   .hero-img{
+    height: 100vh;
+   }
+ }
+
+@media (min-width: 900px){
+    body{
+        padding:0 50px;
+    }
+    .projects{
+        background-color: rgb(52, 49, 49);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}

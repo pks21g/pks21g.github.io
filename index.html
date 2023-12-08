@@ -1,173 +1,95 @@
 <!DOCTYPE html>
-<html lang="eng-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Pawan K Sharma</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/utilities.css">
-        <link rel="stylesheet" href="css/about.css">
-        <link rel="stylesheet" href="css/media-query-tab.css">
-        <link rel="stylesheet" href="css/projects.css">
-        <link rel="stylesheet" href="css/skills.css">
-        <link rel="stylesheet" href="css/form.css">
-        <link rel="stylesheet" href="css/media-query-mobile.css">
-    </head>
-    <body>
-        <!-- header -->
-        <header class="header">
-            <div class="container flex">
-                <div id="logo" class="logo">
-                    <i id="icon" class="fa-solid fa-user-secret fa-4x"></i>
-                    <h1>Pawan K Sharma</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan K Sharma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <script src="scroll.js"></script>
+</head>
+<body>
+    <header class="navbar">
+            <h1>Pawan K Sharma</h1>
+            <ul id="navbar-links" class="navbar-links">
+                <li><a onclick="handleClick('projects')" class="link">Projects</a></li>
+                <li><a href="#about" class="link">About</a></li>
+                <li><a onclick="handleClick('contact')" class="link">Contact</a></li> 
+            </ul>       
+    </header>
+    <main>
+        <section id="about" class="about">
+            <div class="hero-text">
+                <div class="hero-inner-text">
+                    <h1>Hello, I am Pawan!!</h1>
+                    <h2>Weclome to my protfolio website</h2>
+                    <p>I build stuff</p>
+
                 </div>
-                <nav id="navbar" class="navbar">
-                    <ul>
-                        <li><a class="link" href="index.html"><i id="icon-2" class="fa-solid fa-house fa-2xl"></i></a></li>
-                        <li><a class="link" href="#about">About</a></li>
-                        <li><a class="link" href="#skills">Skills</a></li>
-                        <li><a class="link" href="#projects">Projects</a></li>
-                        <li><a class="link" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
-        </header>
-        <!-- header end -->
-        <main>
-                
-            <section class="about"> 
-                <div class="container">
-                    <article>
-                        <h1 class="subheading">About</h1>
-                        <div class="grid"> 
-                            <div class="image-div">
-                                <img class="about-image" src="images/cropselfie.jpg" alt="">
-                            </div>                
-                            <article class="intro">
-                                <h1>Hello! My name is Pawan!!</h1>
-                                <p>I have been in IT field for over 3 years. I have worked in IT support roles but I am passonate about becoming a Software Developer.
-                                I have gained experinece in software development by building apps and websites using various languages and technologies. I have utilized languages such as Java, Python for backend and JavaScript for fronend. I have used frameworks and libraries such as 
-                                react, bootstrap, chakra-ui, formik, for frontend and spring framework for backend, I have utilized various APIs and tools in Java for backend such as spring maven, JDBC, Collection library, Date and Time library.</p>
-                                <p>
-                                    Apart from wanting to becoming a software, I have hobbies that include travelling, guitar playing, singing.
-                                </p>
-                            </article>
-                        </div>
-                    </article>
-                </div>
-      
-
-            <section id="skills" class="skill">
-                <h1 class="subheading">Skills</h1>
-                <div class="container">                    
-                    <div class="grid-3 card">
-                        <div class="flex card-1">
-                            <img src="/images/programmer.png" alt="" class="card-image">
-                            <h1>Languages</h1>
-                            <ul>
-                                <li>Java</li>
-                                <li>C++</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                                <li>PHP</li>
-                            </ul>
-                        </div>
-                        <div class="flex card-2">
-                            <img src="images/technology.jpg" alt="" class="card-image">
-                            <h1>Technologies</h1>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SASS</li>
-                                <li>ABV</li>
-                                <li>AVD</li>
-                            </ul>
-                                
-                        </div>
-                        <div class="flex card-3">
-                            <img src="images/framework.jpg" alt="" class="card-image card-image-2">
-                            <h1>Frameworks</h1>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SASS</li>
-                                <li>ABV</li>
-                                <li>AVD</li>
-                            </ul>
-                                
-                        </div>
-                    </div>
-                </div>
-            </section >
-            
-            
-            <section id ="projects"class="projects">
-  
-                <h1 class="subheading">Projects</h1>
-
-                <div class="container grid-3 mb-grid">
-
-                    <div class="project-item"> 
-                        <div class="project-image">
-                            <img src="https://source.unsplash.com/black-and-silver-camera-on-brown-wooden-table-jdRxqFpPWkU" alt=""  >
-                        </div> 
-                        <p>Simple professional photography website that showcase the work of a photographer. 
-                        <a href="photography-website/index.html" class="links">click to view</a>
-                        </p>   
-                    </div>
-                    <div class="project-item"> 
-                        <div class="project-image">
-                            <img src="images/gears.png" alt=""  >
-                        </div> 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta aliquam officiis.</p> 
-                        <p>See more<a href="https://facebook.com" style="color:aliceblue">
-                        <i class="fa-solid fa-arrow-right-long fa-xl hob"></i></a></p>  
-                    </div>
-                    
-
-                    <div class="project-item"> 
-                        <div class="project-image">
-                            <img src="images/teamwork.jpg" alt=""  >
-                        </div> 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta aliquam officiis.</p>   
-                    </div>
-                </div>
-
-
-            </section>
-            <div class="container gt">
-                <button id="contact">Get in Touch</button>
+            <div class="hero-img flex"> 
+                <h1>check out my projects</h1>
+                <a onclick="handleClick('projects')" class="link">HERE</a>   
             </div>
-
-             <p>Other webistes</p>
-
-                <a href="/disco-fighter/index.html">DISCO FIGHTER</a>
-
-
-            <footer class="footer">
-                <div class="container flex">
-                    <div class="logo">
-                        <i class="fa-regular fa-copyright fa-xl"></i>
-                        <h4>2023 All rights reserved.</h4>
-                    </div>    
-                    <nav id="navbar" class="navbarfooter">
-                        <ul>
-                            <a href="https://stackoverflow.com"><i class="fa-brands fa-stack-overflow fa-xl"></i></a>
-                            <a href="https://stackexchange.com"><i class="fa-brands fa-stack-exchange fa-xl"></i></a>
-                            <a href="https://github.com/pks21g"><i class="fa-brands fa-github fa-xl"></i></a>
-                            <a href="https://github.com/pks21g"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                            <a href="https://medium.com"><i class="fa-brands fa-medium fa-xl"></i></a>
-                            <a href="https://github.com/pks21g"><i class="fa-brands fa-twitter fa-xl"></i></a>
-                            <a href="https://github.com/pks21g"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                            <a href="https://github.com/pks21g"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                            <a href="https://github.com/pks21g"><i class="fa-brands fa- fa-xl"></i></a>
-                        </ul>
-                    </nav>
+        </section>
+        <h1 class="heading">PROJECTS</h1>
+        <section id="projects" class="projects">
+            <div class="project-one card">
+                <div class="project-image">
+                    <img src="https://source.unsplash.com/black-camera-lens-on-brown-wooden-table-o08u5jVuy00" alt="">
                 </div>
-            </footer>
-        </main>
-    </body>
+                <h3><strong>Professional Photography Website</strong></h3>
+                <h4>This is a simple website built for a professional photographer to promote and showcase their work.</h4>
+                <a href="photography-website/index.html" class="link btn">check out</a>
+            </div>
+            <div class="project-two card">
+                <div class="project-image">
+                    <img src="https://source.unsplash.com/black-dj-controller-in-close-up-photography-Rrms3mAAn1M" alt="">
+                </div>
+                <h3><strong>Professional Fictitious Band Website</strong></h3>
+                <h4>Disco Fighter is a band from Gotham city that needs a professioanl website before there debut album is out.</h4>
+                <a href="https://github.com/pks21g/disco_fighter" class="link btn">check out</a>
+            </div>
+            <div class="project-three card">
+                <div class="project-image">
+                    <img src="https://source.unsplash.com/brown-themed-bar-GXXYkSwndP4" alt="">
+                </div>
+                <h3><strong>Little Lemon Restaurant Website: Meta Project</strong></h3>
+                <h4>Little Lemon Restaurant is a fusion restaurant which needs a webiste to fulfill its growing demand.</h4>
+                <a href="#" class="link btn">check out</a>
+            </div>
+            
+        </section>
+
+            
+    <form action="" class="contact" id="contact">
+        <h1>Get In Touch</h1>
+        <div class="inputbox">
+            <input type="text" id="fname" placeholder="FIRST NAME" required>
+            <input type="text" id="lname" placeholder="LAST NAME" required>
+            <input type="email" id="email" placeholder="EMAIL" required>
+            <input type="button" type="submit" value="submit">
+            <!-- <span>First Name</span> -->
+        </div>
+    </form>
+
+    </main> 
+    <footer class="footer">
+
+        <p>&copy; Copyright 2023 Pawan K Sharma. All rights reserved</p>
+        <div class="icons">
+            <a href="https://stackoverflow.com"><i class="fa-brands fa-stack-overflow fa-xl"></i></a>
+            <a href="https://stackexchange.com"><i class="fa-brands fa-stack-exchange fa-xl"></i></a>
+            <a href="https://github.com/pks21g"><i class="fa-brands fa-github fa-xl"></i></a>
+            <a href="https://github.com/pks21g"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://medium.com"><i class="fa-brands fa-medium fa-xl"></i></a>
+            <a href="https://github.com/pks21g"><i class="fa-brands fa-twitter fa-xl"></i></a>
+            <a href="https://github.com/pks21g"><i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="https://github.com/pks21g"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="https://github.com/pks21g"><i class="fa-brands fa- fa-xl"></i></a>
+        </div>
+    </footer>
+    <a href="" id="arrow"><i  class="fa-solid fa-arrow-up fa-2xl"></i></a> 
+</body>
 </html>
