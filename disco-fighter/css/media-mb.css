@@ -1,4 +1,9 @@
 @media (max-width:620px) {
+    .album{
+        display: flex;
+        flex-direction:column-reverse;
+        margin:auto 50px;
+    }
     .navbar .flex{
         flex-direction: column;
     }
@@ -17,24 +22,12 @@
         font-weight: 300;
     }
 
-    .new-album{
-        margin-top: 10px;
-    }
-
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        gap:10px;
+    .album{
+        display: flex;
+        flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;
-        height: auto;
-        width: auto;
     }
-    .new-album-txt{
-        padding-top: 30px;
-        height: 300px;
-        width: auto;
+    .album-text h1{
+        font-size: 2rem;
     }
-
 }

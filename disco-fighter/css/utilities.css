@@ -8,9 +8,7 @@
 
 body{
     font-family: 'lato', 'Segoe UI', Tahoma, Verdana, sans-serif, Courier, monospace;
-    letter-spacing: 6px;
-    line-height: 1.6;
-    color: #fff;
+    letter-spacing: 2px;
     background-color: #ccccb2;
 }
 
@@ -25,15 +23,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+img{
+    width: 100%;
+    object-fit: cover;
 }
+

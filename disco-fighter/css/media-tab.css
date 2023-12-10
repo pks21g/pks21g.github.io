@@ -16,6 +16,16 @@
     .navbar h1{
         font-size: 2rem;
         padding: 10px;
+    } 
+    .album{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 
-}
+    .album-text h1{
+        font-size: 3rem;
+    }
+} 
+
+   
