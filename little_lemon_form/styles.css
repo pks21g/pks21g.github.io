@@ -125,6 +125,8 @@ body {
     text-decoration: none;
     color:black;
     transition: 300ms ease;
+    position: absolute;
+    right: 43%;
 }
 
 .btn:hover{
@@ -256,6 +258,70 @@ body {
         font-weight:bold;
     }
 
+
+}
+
+@media(max-width:450px){
+    .weekly_deal{
+        background-position:right;
+    }
+    
+    .promo span {
+        font-size: 2rem; 
+    }
+    
+    .promo h1{
+        z-index: 100;
+        font-size: 1.25px;
+    }
+    
+    .back{
+        font-size: 5rem;
+        position: absolute;
+    }
+    
+    .btn{
+        padding: 5px 10px;
+        font-size: 2rem;
+        position: absolute;
+    }
+
+    .weekly_deal-heading{
+        font-size: .8rem;
+        text-align: center;
+    }
+    
+}
+
+@media(max-width:600px){
+
+    .navigation img{
+        display: none;
+    }
+    .navigation ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        padding: 0 20px;
+        list-style: none;
+        border-radius: 20px;
+        margin:0 auto;
+    }
+    
+    .navigation li{
+        font-size: 1.3rem;    
+    }
+    
+    .navigation li a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .navigation li a:hover{
+        cursor: pointer;
+        color: #FFFDFA;
+    }
 
 }
 
