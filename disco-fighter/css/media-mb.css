@@ -30,4 +30,24 @@
     .album-text h1{
         font-size: 2rem;
     }
+
+    .cd .grid-3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shop .grid-4{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videos .grid-3{
+        grid-template-columns: repeat(1, 1fr);
+        gap:20px;
+    }
+
 }

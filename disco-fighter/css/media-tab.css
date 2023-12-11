@@ -1,4 +1,5 @@
 @media (min-width:620px) and (max-width:930px){
+
     .navbar{
         height: 140px;
     }
@@ -26,6 +27,42 @@
     .album-text h1{
         font-size: 3rem;
     }
+
+   
+    .cd .grid-3{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shop .grid-4{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+    }
+
+    .videos .grid-3{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+
+
 } 
+
+@media(max-width:1250){
+    .cd .grid-3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+}
 
    
