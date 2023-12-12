@@ -36,12 +36,14 @@ img{
 }
 
 .flex{
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .grid-3{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -112,9 +114,10 @@ img{
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    margin:0 30px;
+    margin:auto;
 
 }
+
 .album-btn{
     text-decoration: none;
     background-color: antiquewhite;
@@ -122,13 +125,13 @@ img{
     margin-top: 10px;
     font-weight: bolder;
     color:black;
-    border:3px solid #ccccb2;
+    border:3px solid #a0a07c;
     font-size: 1.2rem;
     transition: 400ms ease;
 }
 
 .album-btn:hover{
-    background-color: #ccccb2;
+    background-color: #a0a07c;
 }
 .album-text{
     display: flex;
@@ -139,9 +142,17 @@ img{
     font-weight: 800;
     font-size: 3rem;
 }
-.album-image{
+.album-image {
     width:65%;
 }
+/* 
+.album-image img{
+    box-shadow: 4px 3px 4px rgba(154, 155, 154, 0.4),
+    5px 2px 4px rgba(129, 130, 129, 0.4);
+    border-radius: 10px;
+    opacity: .4;
+    background-color: black;
+} */
 
 i{
     color:black;
@@ -273,11 +284,14 @@ color: black;
 }
 
 
-
-.videos .grid-3{
+/* videos */
+.videos{
+    padding:0;
     width: 100%;
     margin-top: 50px;
-    gap:20px;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
 }
 
 .videos h1{
@@ -285,10 +299,12 @@ color: black;
 }
 
 .video{
+    align-self: center;
     justify-self: center;
+}
 
-}
 iframe{
-    width:380px;
-    height: 200px;
+    width:320px;
+    height:190px;
 }
+
