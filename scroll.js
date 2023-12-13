@@ -25,10 +25,26 @@ function handleClick(e) {
     });
   }
 
-function showMenu(){
-    const hamburgerMenu = document.querySelector('.navbar-links');
-    console.log('clicked');
-    hamburgerMenu.classList.toggle('show');
-
+let form_input = document.getElementById('input_form');
+form_input.addEventListener('submit', (e) => {
     
-}
+    const success= document.getElementsById('success');
+    const danger = document.getElementsById('danger')
+    const name = document.getElementsByName('name').value;
+    const email = document.getElementsByName('email').value;
+    const message = document.getElementsByName('message').value;
+    console.log(`name ${name} and email ${email} and message ${message}`)
+    e.preventDefault();
+
+    if(name === "" || email === "" || message == ""){
+        danger.style.display = 'block';
+    }
+    else{
+        setTimeout(() => {
+            name.value = "";
+            email.value='';
+            message.value='';}, 2000);
+            success.style.display = 'block';
+        }
+    }
+ )
