@@ -19,63 +19,85 @@
             </ul>    
     </header>
     <main>
-        <section id="about" class="about">
-            <div class="hero-text">
-                <div class="hero-inner-text">
-                        <img src="delhiairportpic(1).png" alt="">    
-                    <div> 
+        <section id="about" class="container about">
+            <div class="flex">
+                <div class="intro">
+                    <img src="delhiairportpic(1).png" alt="">
+                    <div class="intro-text">
                         <h1>Hello, I am Pawan!!</h1>
+                        <hr class="top">
                         <h2>Weclome to my protfolio website</h2>
-                        <p>I build stuff</p>
-                    </div>
+                        <p>I build stuff</p> 
+                        <hr>
+                    </div>        
                 </div>
+                <div class="hero-text">
+                    <h1>check out my projects</h1>
+                    <a onclick="handleClick('projects')" class="btn">HERE</a> 
+                </div> 
             </div>
-            <div class="hero-img flex"> 
-                <h1>check out my projects</h1>
-                <a onclick="handleClick('projects')" class="link">HERE</a>   
-            </div>
+           
+             
         </section>
         <h1 class="heading">PROJECTS</h1>
         <section id="projects" class="projects">
-            <div class="project-one card">
+            <div class="project card">
                 <div class="project-image">
                     <img src="https://source.unsplash.com/black-camera-lens-on-brown-wooden-table-o08u5jVuy00" alt="">
                 </div>
-                <h3><strong>Professional Photography Website</strong></h3>
-                <h4>This is a simple website built for a professional photographer to promote and showcase their work.</h4>
-                <a href="photography-website/index.html" class="link btn">check out</a>
+                <div class="description">
+                    <h3><strong>Professional Photography Website</strong></h3>
+                    <h4>This is a simple website built for a professional photographer to promote and showcase their work.</h4>
+                    <a href="photography-website/index.html" class="btn">check out</a>
+                </div>
+                
             </div>
-            <div class="project-two card">
+            <div class="project card">
                 <div class="project-image">
                     <img src="https://source.unsplash.com/black-dj-controller-in-close-up-photography-Rrms3mAAn1M" alt="">
                 </div>
-                <h3><strong>Professional Fictitious Band Website</strong></h3>
-                <h4>Disco Fighter is a band from Gotham city that needs a professioanl website before there debut album is out.</h4>
-                <a href="disco-fighter/index.html" class="link btn">check out</a>
+                <div class="description">
+                    <h3><strong>Professional Fictitious Band Website</strong></h3>
+                    <h4>Disco Fighter is a band from Gotham city that needs a professioanl website before there debut album is out.</h4>
+                    <a href="disco-fighter/index.html" class="btn">check out</a>
+                </div>
+                
             </div>
-            <div class="project-three card">
+            <div class="project card">
                 <div class="project-image">
                     <img src="https://source.unsplash.com/brown-themed-bar-GXXYkSwndP4" alt="">
                 </div>
-                <h3><strong>Little Lemon Restaurant Website: Meta Project</strong></h3>
-                <h4>Little Lemon Restaurant is a fusion restaurant which needs a webiste to fulfill its growing demand.</h4>
-                <a href="little_lemon_form/index.html" class="link btn">check out</a>
+                <div class="description">
+                    <h3><strong>Little Lemon Restaurant Website: Meta Project</strong></h3>
+                    <h4>Little Lemon Restaurant is a fusion restaurant which needs a webiste to fulfill its growing demand.</h4>
+                    <a href="little_lemon_form/index.html" class="btn">check out</a>
+                </div>
+                
             </div>
             
         </section>
-
+        <h1 class="heading">Get In Touch</h1>
             
-    <form action="" class="contact" id="contact">
-        <h1>Get In Touch</h1>
-        <div class="inputbox">
-            <input type="text" id="fname" placeholder="FIRST NAME" required>
-            <input type="text" id="lname" placeholder="LAST NAME" required>
-            <input type="email" id="email" placeholder="EMAIL" required>
-            <input type="button" type="submit" value="submit">
-            <!-- <span>First Name</span> -->
-        </div>
-    </form>
-
+        <section class="contact-form">
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+          
+              <button type="submit">Submit</button>
+            </form>
+          </section>
     </main> 
     <footer class="footer">
 

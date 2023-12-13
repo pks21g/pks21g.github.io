@@ -24,3 +24,11 @@ function handleClick(e) {
         inline: "nearest"
     });
   }
+
+function showMenu(){
+    const hamburgerMenu = document.querySelector('.navbar-links');
+    console.log('clicked');
+    hamburgerMenu.classList.toggle('show');
+
+    
+}
