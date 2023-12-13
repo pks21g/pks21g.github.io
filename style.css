@@ -322,13 +322,13 @@ section.contact-form {
   }
 
   input, textarea {
+    appearance: none;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     box-shadow: .3px 1px 1px 2px rgba(15, 15, 15, 0.787);
     outline: none;
     border: none;
-    /* background-color: #fff; */
     background-color: #b5aeae;
   }
 
