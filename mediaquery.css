@@ -25,39 +25,3 @@
         width:85%;
     }
 }
-
-@media(max-width:500px){
-    .about .flex h1{
-        width:100%;
-        font-size: 1.6rem;
-        color: #fff;
-       
-    }
-    
-    .about .flex h2,
-    .about .flex p{
-        font-weight: 800;
-        font-size: 1.3rem;
-        color: #827b7b;
-        border-left: 1px dotted #fff;
-        border-right: 1px dotted #fff;
-        padding:0 10px;
-        
-    }
-
-    .project{
-        height:530px;
-    }
-
-    .contact-form{
-        padding:10px;
-    }
-
-    input, textarea {
-        font-size: 1rem;
-        appearance: none;
-        padding: 15px;
-        
-      }
-
-}
