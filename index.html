@@ -1,122 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pawan K Sharma</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquery.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
     <script src="scroll.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="navbar">
-            <h1>Pawan K Sharma</h1>
-            <ul class="navbar-links">
-                <li><a onclick="handleClick('projects')" class="link">Projects</a></li>
-                <li><a onclick="handleClick('about')" class="link">About</a></li>
-                <li><a onclick="handleClick('heading')" class="link">Contact</a></li> 
-            </ul>    
+      <h1>Pawan K Sharma</h1>
+      <ul class="navbar-links">
+        <li><a onclick="handleClick('projects')" class="link">Projects</a></li>
+        <li><a onclick="handleClick('about')" class="link">About</a></li>
+        <li><a onclick="handleClick('heading')" class="link">Contact</a></li>
+      </ul>
     </header>
     <main>
-        <section id="about" class="container about">
-            <div class="flex">
-                <div class="intro">
-                    <img src="delhiairportpic(1).png" alt="">
-                    <div class="intro-text">
-                        <h1>Hello, I am Pawan!!</h1>
-                        <hr class="top">
-                        <h2>Weclome to my protfolio website</h2>
-                        <p>I build stuff</p> 
-                        <hr>
-                    </div>        
-                </div>
-                <div class="hero-text">
-                    <h1>check out my projects</h1>
-                    <a onclick="handleClick('projects')" class="btn">HERE</a> 
-                </div> 
+      <section id="about" class="container about">
+        <div class="flex">
+          <div class="intro">
+            <img src="delhiairportpic(1).png" alt="" />
+            <div class="intro-text">
+              <h1>Hello, I am Pawan!!</h1>
+              <hr class="top" />
+              <h2>Weclome to my protfolio website</h2>
+              <p>I build stuff</p>
+              <hr />
             </div>
-           
-             
-        </section>
-        <h1 class="heading" >PROJECTS</h1>
-        <section class="projects" id="projects">
-            <div class="project card">
-                <div class="project-image">
-                    <img src="https://source.unsplash.com/black-camera-lens-on-brown-wooden-table-o08u5jVuy00" alt="">
-                </div>
-                <div class="description">
-                    <h3><strong>Professional Photography Website</strong></h3>
-                    <h4>This is a simple website built for a professional photographer to promote and showcase their work.</h4>
-                    <a href="photography-website/index.html" class="btn">check out</a>
-                </div>
-                
-            </div>
-            <div class="project card">
-                <div class="project-image">
-                    <img src="https://source.unsplash.com/black-dj-controller-in-close-up-photography-Rrms3mAAn1M" alt="">
-                </div>
-                <div class="description">
-                    <h3><strong>Professional Fictitious Band Website</strong></h3>
-                    <h4>Disco Fighter is a band from Gotham city that needs a professioanl website before there debut album is out.</h4>
-                    <a href="disco-fighter/index.html" class="btn">check out</a>
-                </div>
-                
-            </div>
-            <div class="project card">
-                <div class="project-image">
-                    <img src="https://source.unsplash.com/brown-themed-bar-GXXYkSwndP4" alt="">
-                </div>
-                <div class="description">
-                    <h3><strong>Little Lemon Restaurant Website: Meta Project</strong></h3>
-                    <h4>Little Lemon Restaurant is a fusion restaurant which needs a webiste to fulfill its growing demand.</h4>
-                    <a href="little_lemon_form/index.html" class="btn">check out</a>
-                </div>
-                
-            </div>
-            
-        </section>
-        <h1 class="heading" id="heading">Get In Touch</h1>
-            
-        <section class="contact-form">
-            <form id='input_form'>
-              <div class="form-group">
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" placeholder="Name" required>
-              </div>
-          
-              <div class="form-group">
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-              </div>
-          
-              <div class="form-group">
-                <label for="message">Message*</label>
-                <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
-              </div>
-          
-              <button type="submit" id="submit">Submit</button>
-              <div id="danger">Failure</div>
-            <div id="success">Form successfully submitted</div>
-            </form>
-            
-          </section>
-    </main> 
-    <footer class="footer">
-
-        <p>&copy; Copyright 2023 Pawan K Sharma. All rights reserved</p>
-        <div class="icons">
-            <a href="https://stackoverflow.com"><i class="fa-brands fa-stack-overflow fa-xl"></i></a>
-            <a href="https://stackexchange.com"><i class="fa-brands fa-stack-exchange fa-xl"></i></a>
-            <a href="https://github.com/pks21g"><i class="fa-brands fa-github fa-xl"></i></a>
-            <a href="https://github.com/pks21g"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-            <a href="https://medium.com"><i class="fa-brands fa-medium fa-xl"></i></a>
-            <a href="https://github.com/pks21g"><i class="fa-brands fa-twitter fa-xl"></i></a>
-            <a href="https://github.com/pks21g"><i class="fa-brands fa-facebook fa-xl"></i></a>
-            <a href="https://github.com/pks21g"><i class="fa-brands fa-instagram fa-xl"></i></a>
-            <a href="https://github.com/pks21g"><i class="fa-brands fa- fa-xl"></i></a>
+          </div>
+          <div class="hero-text">
+            <h1>check out my projects</h1>
+            <a onclick="handleClick('projects')" class="btn">HERE</a>
+          </div>
         </div>
+      </section>
+      <h1 class="heading">PROJECTS</h1>
+      <section class="projects" id="projects">
+        <div class="project card">
+          <div class="project-image">
+            <img
+              src="https://source.unsplash.com/a-computer-screen-with-a-logo-on-it-xkBaqlcqeb4"
+              alt=""
+            />
+          </div>
+          <div class="description">
+            <h3><strong>React app: Web movies app</strong></h3>
+            <h4>This is a simple website built to show list of movies.</h4>
+            <a
+              href="https://github.com/pks21g/react-movie-app/blob/master/public/index.html"
+              class="btn"
+              >check out</a
+            >
+          </div>
+        </div>
+        <div class="project card">
+          <div class="project-image">
+            <img
+              src="https://source.unsplash.com/black-camera-lens-on-brown-wooden-table-o08u5jVuy00"
+              alt=""
+            />
+          </div>
+          <div class="description">
+            <h3><strong>Professional Photography Website</strong></h3>
+            <h4>
+              This is a simple website built for a professional photographer to
+              promote and showcase their work.
+            </h4>
+            <a href="photography-website/index.html" class="btn">check out</a>
+          </div>
+        </div>
+        <div class="project card">
+          <div class="project-image">
+            <img
+              src="https://source.unsplash.com/black-dj-controller-in-close-up-photography-Rrms3mAAn1M"
+              alt=""
+            />
+          </div>
+          <div class="description">
+            <h3><strong>Professional Fictitious Band Website</strong></h3>
+            <h4>
+              Disco Fighter is a band from Gotham city that needs a professioanl
+              website before there debut album is out.
+            </h4>
+            <a href="disco-fighter/index.html" class="btn">check out</a>
+          </div>
+        </div>
+        <div class="project card">
+          <div class="project-image">
+            <img
+              src="https://source.unsplash.com/brown-themed-bar-GXXYkSwndP4"
+              alt=""
+            />
+          </div>
+          <div class="description">
+            <h3>
+              <strong>Little Lemon Restaurant Website: Meta Project</strong>
+            </h3>
+            <h4>
+              Little Lemon Restaurant is a fusion restaurant which needs a
+              webiste to fulfill its growing demand.
+            </h4>
+            <a href="little_lemon_form/index.html" class="btn">check out</a>
+          </div>
+        </div>
+      </section>
+      <h1 class="heading" id="heading">Get In Touch</h1>
+
+      <section class="contact-form">
+        <form id="input_form">
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" id="submit">Submit</button>
+          <div id="danger">Failure</div>
+          <div id="success">Form successfully submitted</div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; Copyright 2023 Pawan K Sharma. All rights reserved</p>
+      <div class="icons">
+        <a href="https://stackoverflow.com"
+          ><i class="fa-brands fa-stack-overflow fa-xl"></i
+        ></a>
+        <a href="https://stackexchange.com"
+          ><i class="fa-brands fa-stack-exchange fa-xl"></i
+        ></a>
+        <a href="https://github.com/pks21g"
+          ><i class="fa-brands fa-github fa-xl"></i
+        ></a>
+        <a href="https://github.com/pks21g"
+          ><i class="fa-brands fa-linkedin fa-xl"></i
+        ></a>
+        <a href="https://medium.com"
+          ><i class="fa-brands fa-medium fa-xl"></i
+        ></a>
+        <a href="https://github.com/pks21g"
+          ><i class="fa-brands fa-twitter fa-xl"></i
+        ></a>
+        <a href="https://github.com/pks21g"
+          ><i class="fa-brands fa-facebook fa-xl"></i
+        ></a>
+        <a href="https://github.com/pks21g"
+          ><i class="fa-brands fa-instagram fa-xl"></i
+        ></a>
+        <a href="https://github.com/pks21g"
+          ><i class="fa-brands fa- fa-xl"></i
+        ></a>
+      </div>
     </footer>
-    <a href="" id="arrow"><i  class="fa-solid fa-arrow-up fa-2xl"></i></a> 
-</body>
+    <a href="" id="arrow"><i class="fa-solid fa-arrow-up fa-2xl"></i></a>
+  </body>
 </html>
