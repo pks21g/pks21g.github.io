@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700;800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
 
@@ -7,17 +7,22 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    line-height: 1.4;
-    word-spacing: .2rem;
+    /* line-height: 1.4; */
+    word-spacing: .1rem;
 }
 
 body{
     max-width: 1100px;
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
-    background-color: #0e0b16;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* background-color: #8c4f51; */
+    /* background-color: #1C3144; */
+    /* background-color: #0e0b16; */
+    background-color: #D8BFAA;
+
+    /* background-color: #513247; */
     scroll-behavior: smooth;
-    color:#fff
+    color: #fff;;
 }
 
 main{
@@ -34,7 +39,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #101419;
 }
 
 .card{
@@ -61,7 +66,8 @@ header{
 
 .navbar h1{
     text-decoration-line:line-through;
-    color:#de1d0a;
+    /* color:#de1d0a; */
+    color:#101419;
     font-size: 1.5rem;
     font-weight: 700;
     rotate: -2deg;
@@ -77,7 +83,7 @@ header{
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 700;
-    color:#de1d0a;
+    color:#101419;
     transition: 300ms ease;
 }
 .navbar-links a:hover{
@@ -120,7 +126,7 @@ header{
 .about{
     width:100%;
     height:90svh;
-    opacity: .8;
+    /* opacity: .8; */
 }
 
 .about .flex{
@@ -131,38 +137,41 @@ header{
     justify-content: center;
     align-items: center;
     margin: auto;
+    background-color: #D8BFAA;
     gap:20px;
     
 }
 
 .about .flex img{
-    width:200px;
+    width:100%;
+    height: 30svh;
     object-fit: cover;
+    margin-bottom: 50px;
 }
 .about .flex h1{
     width:100%;
     font-size: 2.2rem;
-    color: #fff;
+    color: #0a0909;
    
 }
 
 .about .flex h2,
 .about .flex p{
-    font-weight: 800;
-    font-size: 2rem;
-    color: #827b7b;
-    border-left: 1px dotted #fff;
-    border-right: 1px dotted #fff;
-    padding:0 10px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #1f192f;
+    /* padding:0 10px; */
+    text-shadow: 20px 0 10px rgb(83, 35, 67, .5),
+    -10px 0 10px rgb(83, 35, 67, .5);
     
 }
 
 .about .flex h2{
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 .about .flex p{
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 hr{
@@ -172,23 +181,36 @@ hr{
     border: 1px solid #fff;
 }
 
-.top{
-    transform: rotate(1.5deg);
-    margin-bottom: 10px;
-}
 
 .intro{
     width:100%;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 4px;
+    text-align: left;
+    /* align-items: center; */
+}
+.intro-text,
+.intro-text h1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
+    text-align: left;
+    gap:2px;
 }
 
 .hero-text{
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-top: 40px;
+    /* display: block; */
+    /* text-align: center; */
+    /* padding-bottom: 10px; */
 
 }
 
@@ -196,9 +218,9 @@ hr{
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    text-align: center;
-    padding: 10px;
+    /* margin-bottom: 10px; */
+    /* text-align: center; */
+    /* padding: 10px; */
 }
 
 .btn{
@@ -219,7 +241,7 @@ hr{
     background-color: #333;
 }
 .about .flex{
-    background-image: url("https://source.unsplash.com/gray-and-black-laptop-computer-on-surface-Im7lZjxeLhg");
+    /* background-image: url("https://source.unsplash.com/gray-and-black-laptop-computer-on-surface-Im7lZjxeLhg"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -236,13 +258,14 @@ hr{
     margin: 0;
     font-size: 2.2rem;
     font-weight: 800;
-    opacity: .8;
+    opacity: .1;
     background-color:  #0e0b16;
+
 }
 
 .projects{
     width: 100%;
-    background-color:  #0e0b16;
+    /* background-color:  #468C98; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin:auto;
@@ -262,19 +285,22 @@ hr{
     margin: auto;
     padding-bottom: 30px;
     height: 500px; 
+
 }
 
 .description{
     display: flex;
     flex-direction: column;
+    /* background-color: #476C9B; */
     gap:5px;
     justify-content: flex-start;
 }
 .project .description h3{
-    color:red;
+    color:#0a0909;
     font-weight: 800;
 }
 .project .description h4{
+    font-weight: 500;
     color:#898989;
 }
 .description .btn{
