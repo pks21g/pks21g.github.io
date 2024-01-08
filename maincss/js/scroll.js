@@ -1,25 +1,40 @@
 
+
+let isScrolling;
 const arrow = document.getElementById('arrow');
 
-window.onscroll = function() { scrollFunction()};
+window.addEventListener('scroll', () =>{
+  window.clearTimeout(isScrolling)
+  isScrolling = setTimeout(() =>{
+    arrow.style.display ='block'
+  }, 500)
+},false)
 
 const scrollFunction = () =>{
-    if (document.body.scrollTop > 20 || document.documentElement < 20)
-        arrow.style.display = 'block';
-    else
-        arrow.style.display = 'none';
+  if(window.scrollY || window.scrollX){
+    arrow.style.display = 'none'
+  }
+  else {
+    arrow.style.display = 'block'
+  }
+}
+const homeScroll = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
-arrow.addEventListener('click', () => {
+window.onscroll = scrollFunction;
+const scrollToTop = () =>{
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-})
+}
+arrow.addEventListener('click', scrollToTop())
+arrow.removeEventListener('click', scrollToTop())
 
-   
 function handleClick(e) {
     var elmnt = document.getElementById(e);
     elmnt.scrollIntoView({
-        behavior: "smooth", 
+        behavior: "smooth",
         block: "start",
         inline: "nearest"
     });
@@ -27,7 +42,7 @@ function handleClick(e) {
 
 let form_input = document.getElementById('input_form');
 form_input.addEventListener('submit', (e) => {
-    
+
     const success= document.getElementsById('success');
     const danger = document.getElementsById('danger')
     const name = document.getElementsByName('name').value;
@@ -48,3 +63,21 @@ form_input.addEventListener('submit', (e) => {
         }
     }
  )
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active" );
+  navMenu.classList.toggle("active");
+});
+
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}

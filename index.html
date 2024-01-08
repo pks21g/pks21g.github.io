@@ -11,110 +11,202 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaquery.css" />
-    <script src="scroll.js"></script>
+    <link rel="stylesheet" href="../maincss/style.css" />
+    <link rel="stylesheet" href="../maincss/nav.css" />
+    <link rel="stylesheet" href="../maincss/about.css" />
+    <link rel="stylesheet" href="../maincss/projects.css" />
   </head>
   <body>
-    <header class="navbar">
-      <h1>Pawan K Sharma</h1>
-      <ul class="navbar-links">
-        <li><a onclick="handleClick('projects')" class="link">Projects</a></li>
-        <li><a onclick="handleClick('about')" class="link">About</a></li>
-        <li><a onclick="handleClick('heading')" class="link">Contact</a></li>
-      </ul>
+    <header class="container">
+      <nav class="navbar">
+        <a class="nav-branding" id="home">Pawan K Sharma</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a onclick="homeScroll()" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="handleClick('about')" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="handleClick('contact')" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
+
     <main>
-      <section id="about" class="container about">
-        <div class="flex">
-          <div class="intro">          
-            
-            <div class="intro-text">
-              <img src="delhiairportpic3.jpg" alt="" />
-              <h1>Hello, I am Pawan!!</h1>
-              <h2>Weclome to my protfolio website</h2>
-              <p>I build stuff</p>
-              <div class="hero-text">
-                <h1>check out my projects</h1>
-                <a onclick="handleClick('projects')" class="btn">HERE</a>
-              </div>
-            </div>
-            
+      <section id="about" class="about">
+        <div class="intro flex container">
+          <img src="../maincss/images/delhiairportpic3.jpg" alt="" />
+          <div class="intro-text">
+            <h1>Hello, I am Pawan!!</h1>
+            <p>Weclome to my protfolio website</p>
+            <p>I build stuff</p>
           </div>
-         
+          <div class="hero-text">
+            <h1>check out my projects</h1>
+            <a onclick="handleClick('projects')" class="btn">HERE</a>
+          </div>
         </div>
       </section>
       <h1 class="heading">PROJECTS</h1>
-      <section class="projects" id="projects">
-        <div class="project card">
-          <div class="project-image">
-            <img
-              src="https://source.unsplash.com/a-computer-screen-with-a-logo-on-it-xkBaqlcqeb4"
-              alt=""
-            />
-          </div>
-          <div class="description">
-            <h3><strong>React app: Web movies app</strong></h3>
-            <h4>This is a simple website built to show list of movies.</h4>
-            <a
-              href="react-movie-app/public/index.html"
-              class="btn"
-              >check out</a
-            >
-          </div>
-        </div>
-        <div class="project card">
-          <div class="project-image">
-            <img
-              src="https://source.unsplash.com/black-camera-lens-on-brown-wooden-table-o08u5jVuy00"
-              alt=""
-            />
-          </div>
-          <div class="description">
-            <h3><strong>Professional Photography Website</strong></h3>
-            <h4>
-              This is a simple website built for a professional photographer to
-              promote and showcase their work.
-            </h4>
-            <a href="photography-website/index.html" class="btn">check out</a>
-          </div>
-        </div>
-        <div class="project card">
-          <div class="project-image">
-            <img
-              src="https://source.unsplash.com/black-dj-controller-in-close-up-photography-Rrms3mAAn1M"
-              alt=""
-            />
-          </div>
-          <div class="description">
-            <h3><strong>Professional Fictitious Band Website</strong></h3>
-            <h4>
-              Disco Fighter is a band from Gotham city that needs a professioanl
-              website before there debut album is out.
-            </h4>
-            <a href="disco-fighter/index.html" class="btn">check out</a>
+      <section class="projects container" id="projects">
+        <div class="project-overlay">
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="https://source.unsplash.com/a-person-standing-in-front-of-a-facebook-logo-RoqC4Bw5B8A"
+                alt=""
+              />
+              <i class="fa-brands fa-meta fa-2xl"></i>
+            </div>
+            <div class="description">
+              <h3><strong>Meta Capstone, frontend developer: Coursera</strong></h3>
+              <h4>
+                This is a react project: restaurant website, from Coursera Meta Frontend Specialization. 
+              </h4>
+              <a
+                href="<div class="project-overlay">
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="https://source.unsplash.com/a-person-standing-in-front-of-a-facebook-logo-RoqC4Bw5B8A"
+                alt=""
+              />
+              <i class="fa-brands fa-meta fa-2xl"></i>
+            </div>
+            <div class="description">
+              <h3><strong>Meta Capstone, frontend developer: Coursera</strong></h3>
+              <h4>
+                This is a react project: restaurant website, from Coursera Meta Frontend Specialization. 
+              </h4>
+              <a
+                href="https://pks21g.github.io/meta-capstone/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >check out</a
+              >
+            </div>
           </div>
         </div>
-        <div class="project card">
-          <div class="project-image">
-            <img
-              src="https://source.unsplash.com/brown-themed-bar-GXXYkSwndP4"
-              alt=""
-            />
+"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >check out</a
+              >
+            </div>
           </div>
-          <div class="description">
-            <h3>
-              <strong>Little Lemon Restaurant Website: Meta Project</strong>
-            </h3>
-            <h4>
-              Little Lemon Restaurant is a fusion restaurant which needs a
-              webiste to fulfill its growing demand.
-            </h4>
-            <a href="little_lemon_form/index.html" class="btn">check out</a>
+        </div>
+
+        <div class="project-overlay">
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="https://source.unsplash.com/black-dj-controller-in-close-up-photography-Rrms3mAAn1M"
+                alt=""
+              />
+              <i class="fa-solid fa-guitar fa-2xl move"></i>
+            </div>
+            <div class="description">
+              <h3><strong>Professional Fictitious Band Website</strong></h3>
+              <h4>
+                Disco Fighter is a band from Gotham city that needs a
+                professioanl website before there debut album is out.
+              </h4>
+              <a
+                href="disco-fighter/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >check out</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-overlay">
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="https://source.unsplash.com/a-computer-screen-with-a-logo-on-it-xkBaqlcqeb4"
+                alt=""
+              />
+              <i class="fa-brands fa-react fa-2xl rotate"></i>
+            </div>
+            <div class="description">
+              <h3><strong>React app: Web movies app</strong></h3>
+              <h4>This is a simple website built to show list of movies.</h4>
+              <a
+                href="https://pks21g.github.io/react-movie-app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >check out</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-overlay">
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="https://source.unsplash.com/black-camera-lens-on-brown-wooden-table-o08u5jVuy00"
+                alt=""
+              />
+              <i class="fa-solid fa-camera fa-2xl rotate"></i>
+            </div>
+            <div class="description">
+              <h3><strong>Professional Photography Website</strong></h3>
+              <h4>
+                This is a simple website built for a professional photographer
+                to promote and showcase their work.
+              </h4>
+              <a
+                href="photography-website/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >check out</a
+              >
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="project-overlay">
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="https://source.unsplash.com/brown-themed-bar-GXXYkSwndP4"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <h3>
+                <strong>Little Lemon Restaurant Website: Meta Project</strong>
+              </h3>
+              <h4>
+                Little Lemon Restaurant is a fusion restaurant which needs a
+                webiste to fulfill its growing demand.
+              </h4>
+              <a
+                href="little_lemon_form/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                >check out</a
+              >
+            </div>
           </div>
         </div>
       </section>
-      <h1 class="heading" id="heading">Get In Touch</h1>
+      <h1 class="heading" id="contact">Get In Touch</h1>
 
       <section class="contact-form">
         <form id="input_form">
@@ -190,5 +282,6 @@
       </div>
     </footer>
     <a href="" id="arrow"><i class="fa-solid fa-arrow-up fa-2xl"></i></a>
+    <script src="../maincss/js/scroll.js"></script>
   </body>
 </html>
