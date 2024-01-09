@@ -53,7 +53,25 @@
   .theme-toggle{
    position: absolute;
    right:25px;
-   top:65px;
+   top:80px;
    z-index: -1;
+   /* font-size: 2rem; */
+  }
+  .fa-moon{
+    font-size: 2rem;
   }
  }
+
+ @media (orientation:landscape) and (max-height:500px){
+  .about{
+    display: flex;
+    height: calc(100svh - 70px);
+  }
+  .intro{
+    justify-content: center;
+  }
+  .about .flex  img{
+    display: none;
+    overflow: hidden;
+  }
+  }
