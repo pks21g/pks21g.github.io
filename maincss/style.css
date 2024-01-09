@@ -3,6 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap");
 
+:root {
+  --main-color-text: #fff;
+  --text-color-black: black;
+  --secondary-color-text: #333;
+  --main-color-btn-text: #de1d0a;
+  --back-ground-color: #141b41;
+  --text-shadow-heading: 60px 20px 50px rgba(22, 190, 31),
+    -60px 20px 60px rgb(4, 107, 81);
+  --header-color: #141b41;
+  --subheading-color: #5efc8d;
+  --card-background-color:#fff;
+}
 * {
   padding: 0;
   margin: 0;
@@ -10,11 +22,28 @@
   word-spacing: 0.1rem;
 }
 
+.dark-mode {
+  --back-ground-color: #ffffff;
+  --main-color-text: #333;
+  --svg-color: #000000;
+  --header-color: #fff;
+--subheading-color: #202ee5;
+--card-background-color:#202ee5;
+--text-shadow-heading: 60px 20px 50px rgb(86, 10, 251),
+-60px 20px 60px rgb(62, 11, 231);
+
+
+
+  transition: all 2s ease;
+}
+
 body {
   font-family: "Roboto Condensed", sans-serif;
   scroll-behavior: smooth;
-  color: #fefafa;
-  background-color: #141b41;
+  color: var(--main-color-text);
+  background-color: var(--back-ground-color);
+  max-width: 1250px;
+  min-width: 320px;
 }
 
 .container {
@@ -33,7 +62,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #101419;
+  /* color: #101419; */
 }
 
 .card {
@@ -41,7 +70,7 @@ img {
     -40px 0px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
+/* 
 .icon {
   position: absolute;
   display: block;
@@ -49,10 +78,9 @@ img {
   justify-content: center;
   top: 25px;
   right: 10px;
-  color: #0a0909;
+  color: #f00909;
   background-color: #b5aeae;
-}
-
+} */
 
 .about {
   width: 100%;
@@ -60,36 +88,31 @@ img {
   border-radius: 40px;
 }
 
-
-
 .heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #5EFC8D;
+  color: var(--subheading-color);
   height: 100px;
   margin: 0;
   font-size: 2.2rem;
   font-weight: 800;
   /* opacity: 0.1; */
   /* background-color: #BF1363; */
-  text-shadow:60px 20px 50px rgba(22, 190, 31),
-  -60px 20px 60px rgb(4, 107, 81);
+  text-shadow: var(--text-shadow-heading);
 }
-
-
 
 section.contact-form {
   border-radius: 8px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-  padding: 20px;
+  border: 1px solid #5efc8d;
+  padding: 0 20px;
   max-width: 400px;
-  margin: 40px auto;
+  margin: 20px auto;
   border-radius: 10px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 label {
@@ -111,11 +134,15 @@ textarea {
   outline: none;
   border: none;
   border-bottom: 2px solid black;
-  background-color: #fff;
+  background-color: #141b41;
+  border: 1px solid white;
+  resize: vertical;
+  color: var(--main-color-text)
+  
 }
 
 ::placeholder {
-  color: red;
+  /* color: red; */
   opacity: 0.8; /* Firefox */
   font-size: 1rem;
   text-align: justify;
@@ -123,19 +150,22 @@ textarea {
 
 ::-ms-input-placeholder {
   /* Edge 12 -18 */
-  color: red;
+  /* color: red; */
   opacity: 0.8;
   font-size: 1rem;
 }
 
-button {
+#submit {
   background-color: #de1d0a;
+  margin-top:20px;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 1em;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .footer {
@@ -145,6 +175,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  margin-bottom: 50px;
 }
 .icons a {
   margin-right: 10px;
@@ -169,29 +200,34 @@ button {
   color: #de1d0a;
   z-index: 100;
   font-weight: 800;
-
 }
 
 #arrow:hover {
   color: #5a8dae;
 }
 
-
-@media (max-width: 390px){
-  .icons{
+@media (max-width: 390px) {
+  .icons {
     padding-bottom: 50px;
     justify-content: center;
     margin: 0 auto;
-    gap:5px;
-  
+    gap: 5px;
   }
   .footer {
     gap: 10px;
     align-items: center;
     justify-content: center;
   }
-  .footer p{
-    font-size: .8rem;
-
+  .footer p {
+    font-size: 0.8rem;
   }
+}
+.theme-toggle {
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  box-shadow: none;
+  background-color: transparent;
 }
