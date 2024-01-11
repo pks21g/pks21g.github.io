@@ -46,6 +46,42 @@ body {
   min-width: 320px;
 }
 
+.name{
+  position: relative;
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: opacity 0.5s, transform 1.5s;
+
+}
+.text, .text2{
+  position: relative;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: opacity 1s, transform 1.5s;
+}
+.pr{
+  position: relative;
+  transform: translateY(-300px);
+  opacity: 0;
+  transition: opacity 0.5s, transform 1.5s;
+}
+.check-btn{
+  position: relative;
+  transform: translateX(300px);
+  opacity: 0;
+  transition: opacity 1s transform 4s;
+  
+}
+.name.visible, .text.visible,
+.text2.visible, .pr.visible, .check-btn.visible{
+  opacity: 1;
+  transform: translate(0);
+
+}
+.check-btn.visible{
+  transition: 2s;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 60px;

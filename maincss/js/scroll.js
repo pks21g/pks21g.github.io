@@ -95,3 +95,21 @@ themeToggleBtn.addEventListener('click', () =>{
     localStorage.removeItem('theme');
   }
 })
+const n = document.querySelector('.name')
+const p = document.querySelector('.text')
+const p2 = document.querySelector('.text2')
+const pr = document.querySelector('.pr')
+const checkbtn = document.querySelector('.check-btn')
+const abtimg = document.querySelector('.abt-img')
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry =>{
+    entry.target.classList.toggle('visible', entry.isIntersecting)
+  })
+});
+
+observer.observe(n)
+observer.observe(p)
+observer.observe(p2)
+observer.observe(pr)
+observer.observe(checkbtn)
+observer.observer(abtimg)
