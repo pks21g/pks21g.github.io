@@ -63,7 +63,8 @@
     text-decoration: none;
     border: none;
     padding: 10px 30px;
-    background-color: #de1d0a;
+    background-color: var(--main-color-btn-text);
+    border:var(--btn-border);
     border-radius: 10px;
     transition: 400ms ease;
     cursor: pointer;

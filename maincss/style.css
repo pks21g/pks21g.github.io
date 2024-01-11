@@ -8,6 +8,8 @@
   --text-color-black: black;
   --secondary-color-text: #333;
   --main-color-btn-text: #de1d0a;
+  --btn-section-bg-color:rgb(243, 236, 236);
+  --btn-border: none;
   --back-ground-color: #141b41;
   --text-shadow-heading: 60px 20px 50px rgba(22, 190, 31),
     -60px 20px 60px rgb(4, 107, 81);
@@ -23,14 +25,17 @@
 }
 
 .dark-mode {
-  --back-ground-color: #ffffff;
+  --back-ground-color: #c9c6c6;
   --main-color-text: #333;
   --svg-color: #000000;
   --header-color: #fff;
 --subheading-color: #202ee5;
 --card-background-color:#202ee5;
+--main-color-btn-text:#c9c6c6;
+--btn-border: 1px solid rgb(147, 133, 133);
 --text-shadow-heading: 60px 20px 50px rgb(86, 10, 251),
 -60px 20px 60px rgb(62, 11, 231);
+--btn-section-bg-color: var(--main-color-btn-text);
 
 
 
@@ -42,11 +47,11 @@ body {
   scroll-behavior: smooth;
   color: var(--main-color-text);
   background-color: var(--back-ground-color);
-  max-width: 1250px;
-  min-width: 320px;
+  /* max-width: 1250px;
+  min-width: 320px; */
 }
-
-.name{
+@media (min-width:900px){
+  .name{
   position: relative;
   transform: translateX(-300px);
   opacity: 0;
@@ -81,6 +86,8 @@ body {
 .check-btn.visible{
   transition: 2s;
 }
+}
+
 
 .container {
   margin: 0 auto;
@@ -148,7 +155,7 @@ section.contact-form {
 }
 
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 label {
@@ -156,7 +163,7 @@ label {
   margin-bottom: 8px;
   padding-left: 16px;
   font-weight: 700;
-  color: #fff;
+  color: var(--main-color-text);
 }
 
 input,
@@ -170,10 +177,11 @@ textarea {
   outline: none;
   border: none;
   border-bottom: 2px solid black;
-  background-color: #141b41;
-  border: 1px solid white;
+  background-color: var(--back-ground-color);
+  border: 1px solid var(--main-color-text);
   resize: vertical;
-  color: var(--main-color-text)
+  color: var(--main-color-text);
+  font-size: 1.2rem;
   
 }
 
