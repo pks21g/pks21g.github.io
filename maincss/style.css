@@ -8,14 +8,14 @@
   --text-color-black: black;
   --secondary-color-text: #333;
   --main-color-btn-text: #de1d0a;
-  --btn-section-bg-color:rgb(243, 236, 236);
+  --btn-section-bg-color: rgb(243, 236, 236);
   --btn-border: none;
   --back-ground-color: #141b41;
   --text-shadow-heading: 60px 20px 50px rgba(22, 190, 31),
     -60px 20px 60px rgb(4, 107, 81);
   --header-color: #141b41;
   --subheading-color: #5efc8d;
-  --card-background-color:#fff;
+  --card-background-color: #fff;
 }
 * {
   padding: 0;
@@ -29,15 +29,13 @@
   --main-color-text: #333;
   --svg-color: #000000;
   --header-color: #fff;
---subheading-color: #202ee5;
---card-background-color:#202ee5;
---main-color-btn-text:#c9c6c6;
---btn-border: 1px solid rgb(147, 133, 133);
---text-shadow-heading: 60px 20px 50px rgb(86, 10, 251),
--60px 20px 60px rgb(62, 11, 231);
---btn-section-bg-color: var(--main-color-btn-text);
-
-
+  --subheading-color: #fff;
+  --card-background-color: #202ee5;
+  --main-color-btn-text: #c9c6c6;
+  --btn-border: 1px solid rgb(147, 133, 133);
+  --text-shadow-heading: 60px 20px 50px rgb(86, 10, 251),
+    -60px 20px 60px rgb(62, 11, 231);
+  --btn-section-bg-color: var(--main-color-btn-text);
 
   transition: all 2s ease;
 }
@@ -50,44 +48,44 @@ body {
   /* max-width: 1250px;
   min-width: 320px; */
 }
-@media (min-width:900px){
-  .name{
-  position: relative;
-  transform: translateX(-300px);
-  opacity: 0;
-  transition: opacity 0.5s, transform 1.5s;
-
+@media (min-width: 900px) {
+  .name {
+    position: relative;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .text,
+  .text2 {
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: opacity 1s, transform 1.5s;
+  }
+  .pr {
+    position: relative;
+    transform: translateY(-300px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .check-btn {
+    position: relative;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: opacity 1s transform 4s;
+  }
+  .name.visible,
+  .text.visible,
+  .text2.visible,
+  .pr.visible,
+  .check-btn.visible {
+    opacity: 1;
+    transform: translate(0);
+  }
+  .check-btn.visible {
+    transition: 2s;
+  }
 }
-.text, .text2{
-  position: relative;
-  transform: translateY(200px);
-  opacity: 0;
-  transition: opacity 1s, transform 1.5s;
-}
-.pr{
-  position: relative;
-  transform: translateY(-300px);
-  opacity: 0;
-  transition: opacity 0.5s, transform 1.5s;
-}
-.check-btn{
-  position: relative;
-  transform: translateX(300px);
-  opacity: 0;
-  transition: opacity 1s transform 4s;
-  
-}
-.name.visible, .text.visible,
-.text2.visible, .pr.visible, .check-btn.visible{
-  opacity: 1;
-  transform: translate(0);
-
-}
-.check-btn.visible{
-  transition: 2s;
-}
-}
-
 
 .container {
   margin: 0 auto;
@@ -145,12 +143,12 @@ img {
   text-shadow: var(--text-shadow-heading);
 }
 
-section.contact-form {
+.contact-form {
   border-radius: 8px;
   border: 1px solid #5efc8d;
   padding: 0 20px;
   max-width: 400px;
-  margin: 20px auto;
+  margin: 50px auto;
   border-radius: 10px;
 }
 
@@ -182,7 +180,6 @@ textarea {
   resize: vertical;
   color: var(--main-color-text);
   font-size: 1.2rem;
-  
 }
 
 ::placeholder {
@@ -201,7 +198,7 @@ textarea {
 
 #submit {
   background-color: #de1d0a;
-  margin-top:20px;
+  margin-top: 20px;
   color: white;
   padding: 15px 20px;
   border: none;
@@ -215,11 +212,12 @@ textarea {
 .footer {
   height: 100px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* flex-direction: column; */
+  justify-content: center;
   align-items: center;
+  gap: 40px;
   padding: 20px 0;
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .icons a {
   margin-right: 10px;
@@ -256,22 +254,42 @@ textarea {
     justify-content: center;
     margin: 0 auto;
     gap: 5px;
+    margin-left: 5px;
   }
   .footer {
+    flex-direction: column;
     gap: 10px;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
   }
   .footer p {
-    font-size: 0.8rem;
+    font-size: .9rem;
   }
 }
 .theme-toggle {
   background-color: transparent;
-  border:none;
+  border: none;
   cursor: pointer;
 }
 .theme-toggle:hover {
   box-shadow: none;
   background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  .icons {
+    padding-bottom: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 5px;
+  }
 }
