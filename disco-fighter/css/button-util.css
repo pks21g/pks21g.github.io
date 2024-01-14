@@ -1,0 +1,22 @@
+.btn{
+    display: inline-block;
+    width: 130px;
+    padding: 7px 21px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    border:none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-outline{
+    border: 2px rgba(0, 118, 206, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.394);
+
+}
+.btn:hover{
+    box-shadow: none;
+    font-size: 1.2rem;
+
+}

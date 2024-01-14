@@ -1,0 +1,17 @@
+
+.grid-live{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    /* height:100%; */
+    /* overflow: hidden; */
+}
+
+.image{
+    height:200px;
+    width:90px;
+    background-color: aqua;
+    z-index: 500px;
+
+}

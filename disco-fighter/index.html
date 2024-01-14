@@ -1,30 +1,9 @@
-
-
-
-
-
-<!DOCTYPE html>
+<!DOCTYPE html type="text/html">
 <html lang="en">
-
-
-<!--***************************************************************************
-
-                Head section:
-            _________________________
-            |                       |
-            |   Contains:           |
-            |   meta data rules,    |
-            |   title,              | 
-            |   internal CSS links  |
-            |_______________________|
-
-*****************************************************************************-->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Disco Fighter</title>
-<<<<<<< HEAD
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -35,7 +14,7 @@
   </head>
 
   <body>
-    <header id='navbar' class="navbar">
+    <header id="navbar" class="navbar">
       <div class="container flex">
         <h1 class="band-name">DISCO FIGHTER</h1>
         <nav>
@@ -118,7 +97,9 @@
       <section class="live container flex">
         <h1 class="band-name section-font-size">LIVE DATES</h1>
         <h2 class="band-name">No dates for 2023</h2>
-        <a href="dates.html" class="album-btn live-tour-btn">View all live dates</a>
+        <a href="dates.html" class="album-btn live-tour-btn"
+          >View all live dates</a
+        >
       </section>
 
       <section class="container shop">
@@ -198,184 +179,76 @@
         </div>
         <div class="flex">
           <a class="album-btn live-tour-btn store-btn">Watch more videos</a>
-=======
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/media-mb.css">
-    <link rel="stylesheet" href="css/media-tab.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/nav-menu.css">
-    <link rel="stylesheet" href="css/out-now.css">
-    <link rel="stylesheet" href="css/cd.css ">
-
-<!--************************************************
-    END OF HEAD
-***************************************************-->
-</head>
-
-
-<!--****************************************************************************
-            _______________________
-            |                     |  
-            |  Body of the page   |
-            |_____________________|
-
-*****************************************************************************-->
-
-<body>
-
-<!--****************************************************************************
-                
-                    Header/nav section:
-
-            _________________________________________        
-            |                                       |
-            |     Containes:                        | 
-            |     Heading/Logo of the band          |
-            |     Navgation menu within the domain  |
-            |_______________________________________|
-    
-*****************************************************************************-->
-
-    <header class="navbar">
-        <div class="container flex">
-            <h1 class="band-name">DISCO FIGHTER</h1> 
-            <nav>
-                <ul>
-                    <li><a href="dates.html">Live</a></li>
-                    <li><a href="https://youtube.com">Videos</a></li>
-                    <li><a href="discofighter.html">Store</a></li>
-                    <li><a href="about.html">Us</a></li>
-                </ul>
-            </nav>
->>>>>>> parent of bb792baa... newsletter section added
         </div>
-    </header>
-    <main> 
-        <section>
-            <div class="banner">
-                <div class="album container">
-                    <div class="album-text">
-                        <h1 class="band-name">DISCO</h1>
-                        <h1 class="band-name">FIGHTER</h1>
-                        <a href="#" class="album-btn">Buy/Listen</a>
-                    </div>
-                    <div class="album-image">
-                        <img src="assets/europe.jpg" alt="">
-                    </div>                
-                </div>
+      </section>
+      <section class="news container">
+        <div class="form">
+          <h2 class="news-heading">Get the latest news</h2>
+          <div class="form-group">
+            <div>
+              <label for="fname">First Name*</label>
             </div>
-        </section>
-        <section class="container out-now">
-                <h1 class="band-name">Disco</h1>
-                <h1 class="band-name">Fighter</h1>
-                <h1>Debut</h1>
-                <h1>Album</h1>
-                <h3>out now</h3>
-        </section>
-        <section class="container cd">
-            <div class="grid-3">
-                <div class="cd-item">
-                    <div class="cd-image">
-                    <img src="https://source.unsplash.com/black-vinyl-record-on-orange-surface-OXhQHGiez_k" alt="">
-                    </div>
-                    <hr>
-                    <div class="flex sale">
-                        <a href="">Standard LP</a>
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </div>
-                    
-                </div>
+            <div>
+              <input
+                type="text"
+                id="fname"
+                placeholder="First Name"
+                required
+                minlength="3"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <label for="lname">Last Name*</label>
+            </div>
 
-                <div class="cd-item">
-                    <div class="cd-image">
-                        <img src="https://source.unsplash.com/shallow-focus-photography-of-black-vinyl-player-PvqGd3PH6ZE" alt="">
-                    </div>
-                    <hr>
-                    <div class="flex">
-                        <a href="">CD</a>
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </div>
-                </div>
+            <div>
+              <input
+                type="text"
+                id="lname"
+                placeholder="Last Name"
+                required
+                minlength="3"
+              />
+            </div>
+          </div>
 
-                <div class="cd-item">
-                    <div class="cd-image">
-                        <img src="https://source.unsplash.com/a-black-and-white-cassette-tape-recorder-on-a-white-background-B04nWJ2wZYI" alt="">
-                    </div>
-                    <hr>
-                    <div class="flex">
-                        <a href="">Cassette</a>
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </div>
-                </div>
+          <div class="form-group">
+            <div>
+              <label for="email">Email*</label>
             </div>
-            
-        </section>
-        <section class="live container flex">
-            <h1 class="band-name section-font-size">LIVE DATES</h1>
-            <h2 class="band-name">No dates for 2023</h2>
-            <a href="" class="album-btn live-tour-btn">View all live dates</a>
-        </section>
-        
-        <section class="container shop">
-            <h1 class="band-name section-font-size flex">STORE</h1>
-            <div class="grid-4">
-                <div class="shop-item">
-                    <img src="https://source.unsplash.com/gray-baseball-cap-on-white-surface-2loKxdi6Hmo" alt="">
-                    <hr>
-                    <div class="flex sale">
-                        <a href="">The Cap</a>
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </div> 
-                </div>
-                <div class="shop-item">
-                    <img src="https://source.unsplash.com/a-pair-of-key-chains-with-a-name-tag-DJ60cnp2snE" alt="">
-                    <hr>
-                    <div class="flex sale">
-                        <a href="">The Keyring</a>
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </div>
+            <div>
+              <input type="email" id="email" placeholder="Email" required />
+            </div>
+          </div>
 
-                </div>
-                <div class="shop-item">
-                    <img src="https://source.unsplash.com/black-leather-bifold-wallet-on-brown-wooden-table-COlvpyHo6iw" alt="">
-                    <hr>
-                    <div class="flex sale">
-                        <a href="">The Wallet</a>
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img src="https://source.unsplash.com/selective-focus-photo-of-white-mug-on-white-surrface-BwJt34F8wKw" alt="">
-                    <hr>
-                    <div class="flex sale">
-                        <a href="">The Cup</a>
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </div>
-                </div>
+          <div class="form-group">
+            <div>
+              <label for="country-list">Country*</label>
             </div>
-            <div class="flex">
-            <a href="" class="album-btn live-tour-btn store-btn">Visit store</a>
+            <div>
+              <select id="country-list"></select>
             </div>
-        </section>
-        
-        <section class="container videos">
-            <h1 class="band-name section-font-size flex">VIDEOS</h1>
-            <div class="grid-3">
-                <div class="video">
-   
-                    <iframe src="https://www.youtube.com/embed/7eMoo0rV7tE" frameborder="0"></iframe>
-                </div>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/7eMoo0rV7tE" frameborder="0"></iframe>
-                </div>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/7eMoo0rV7tE" frameborder="0"></iframe>
-                </div>
-            </div>
-        </section>
+          </div>
 
-   
-    </main> 
-</body>
+          <div class="form-group">
+            <div class="mailing-list">
+              <p>
+                By subscribing to the mailing list you agree to the terms of use
+                of the Disco Fighter' Newsletter
+              </p>
+              <a
+                href=""
+                class="mailing-list-btn album-btn store-btn live-tour-btn"
+                >Join the Mailing List</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div id="tour"></div> -->
+    </main>
+    <script src="/js/script.js" type="module"></script>
+  </body>
 </html>

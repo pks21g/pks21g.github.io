@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'lato', 'Segoe UI', Tahoma, Verdana, sans-serif, Courier, monospace;
+    letter-spacing: 6px;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #ccccb2;
+}
+
+.container{
+    width: 1100px;
+    margin:0 auto;
+    padding:0 auto;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
