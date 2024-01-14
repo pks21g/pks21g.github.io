@@ -23,51 +23,9 @@ header{
     -3px 0px 4px rgba(1,1,1, .1);
 
 }
-.services{
-    display: flex;
-    gap:5px;
-    justify-content: center;
-    align-items: center;
-    background-color: #888;
-    border-radius: 10px;
-    padding: 13px;
-    
-}
-.service-opt{
-    display: none;
-    
-}
-.service-opt.active{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width:350px;
-    gap:10px;
-    height:400px;
-    right:0px;
-    list-style-type: none;
-    font-size: 2rem;
-    background-color: #aca7a7;
-    padding:8px;
-}
-.service-opt li{
-    text-decoration: none;
-    
-}
-
-.service-opt li a {
-    text-decoration: none;
-    color:#333;
-    font-weight: 800;
-    margin:2px;
-}
-
 .connect{
     display: flex;
-    flex-direction: row-reverse;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     align-items: center;
     gap:10px;
 }
@@ -76,7 +34,6 @@ header{
     color:black;
     transition: 400ms ease;
 }
-
 .connect a:hover, 
 .connect h2:hover{
     color: #333;
@@ -108,7 +65,6 @@ main{
 
 #landing{
     background-color: #fff;
-    height:calc(100svh - 70px)
 }
 
 #landing-text{
@@ -116,7 +72,7 @@ main{
     flex-direction: column;
     background-color: antiquewhite;
     flex: 0 1 40vw;
-    height: 50%;
+    height: 50vh;
     justify-content: center;
     align-items: center;
     padding-left: 1rem;
@@ -133,7 +89,7 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:50%;
+    height:50vh;
     flex:0 1 60vw;
     margin:0;
 }
@@ -203,10 +159,7 @@ footer{
   margin:auto;
   color:#333;
 }
-option{
-    font-size: 2rem;
-    width:30px;
-}
+
 footer h3{
     font-size: 3rem;
     margin-bottom: 0;
@@ -218,10 +171,10 @@ footer h3{
         height: 100%;
     }
     #landing-text{
-        height:calc(100svh - 70px);
+        height:100vh;
     }
     #landing-image{
-        height:calc(100svh - 70px);
+        height:100vh;
     }
     
 }
