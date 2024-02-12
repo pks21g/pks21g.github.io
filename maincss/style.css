@@ -8,14 +8,16 @@
   --text-color-black: black;
   --secondary-color-text: #333;
   --main-color-btn-text: #de1d0a;
-  --btn-section-bg-color:rgb(243, 236, 236);
+  --btn-section-bg-color: rgb(243, 236, 236);
+  --btn-color: #fff;
   --btn-border: none;
   --back-ground-color: #141b41;
   --text-shadow-heading: 60px 20px 50px rgba(22, 190, 31),
     -60px 20px 60px rgb(4, 107, 81);
   --header-color: #141b41;
   --subheading-color: #5efc8d;
-  --card-background-color:#fff;
+  --card-background-color: #fff;
+  --contact-form-border:1px solid #333;
 }
 * {
   padding: 0;
@@ -27,19 +29,18 @@
 .dark-mode {
   --back-ground-color: #c9c6c6;
   --main-color-text: #333;
+  --btn-color: #333;
   --svg-color: #000000;
   --header-color: #fff;
---subheading-color: #202ee5;
---card-background-color:#202ee5;
---main-color-btn-text:#c9c6c6;
---btn-border: 1px solid rgb(147, 133, 133);
---text-shadow-heading: 60px 20px 50px rgb(86, 10, 251),
--60px 20px 60px rgb(62, 11, 231);
---btn-section-bg-color: var(--main-color-btn-text);
-
-
-
-  transition: all 2s ease;
+  --subheading-color: #080911;
+  --card-background-color: #202ee5;
+  --main-color-btn-text: #c9c6c6;
+  --btn-border: 1px solid rgb(147, 133, 133);
+  --text-shadow-heading: 60px 20px 50px rgb(2, 1, 6),
+    -60px 20px 60px rgb(2, 1, 6);
+  --btn-section-bg-color: var(--main-color-btn-text);
+--contat-form-border:1px solid #5efc8d;
+  /* transition: all 2s ease; */
 }
 
 body {
@@ -50,44 +51,44 @@ body {
   /* max-width: 1250px;
   min-width: 320px; */
 }
-@media (min-width:900px){
-  .name{
-  position: relative;
-  transform: translateX(-300px);
-  opacity: 0;
-  transition: opacity 0.5s, transform 1.5s;
-
+@media (min-width: 900px) {
+  .name {
+    position: relative;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .text,
+  .text2 {
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: opacity 1s, transform 1.5s;
+  }
+  .pr {
+    position: relative;
+    transform: translateY(-300px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .check-btn {
+    position: relative;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: opacity 1s transform 4s;
+  }
+  .name.visible,
+  .text.visible,
+  .text2.visible,
+  .pr.visible,
+  .check-btn.visible {
+    opacity: 1;
+    transform: translate(0);
+  }
+  .check-btn.visible {
+    transition: 2s;
+  }
 }
-.text, .text2{
-  position: relative;
-  transform: translateY(200px);
-  opacity: 0;
-  transition: opacity 1s, transform 1.5s;
-}
-.pr{
-  position: relative;
-  transform: translateY(-300px);
-  opacity: 0;
-  transition: opacity 0.5s, transform 1.5s;
-}
-.check-btn{
-  position: relative;
-  transform: translateX(300px);
-  opacity: 0;
-  transition: opacity 1s transform 4s;
-  
-}
-.name.visible, .text.visible,
-.text2.visible, .pr.visible, .check-btn.visible{
-  opacity: 1;
-  transform: translate(0);
-
-}
-.check-btn.visible{
-  transition: 2s;
-}
-}
-
 
 .container {
   margin: 0 auto;
@@ -147,21 +148,20 @@ img {
 
 section.contact-form {
   border-radius: 8px;
-  border: 1px solid #5efc8d;
+  border: var(--contact-form-border);
   padding: 0 20px;
   max-width: 400px;
-  margin: 20px auto;
+  margin: 100px auto;
   border-radius: 10px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 label {
   display: block;
   margin-bottom: 8px;
-  padding-left: 16px;
   font-weight: 700;
   color: var(--main-color-text);
 }
@@ -182,7 +182,6 @@ textarea {
   resize: vertical;
   color: var(--main-color-text);
   font-size: 1.2rem;
-  
 }
 
 ::placeholder {
@@ -200,11 +199,11 @@ textarea {
 }
 
 #submit {
-  background-color: #de1d0a;
-  margin-top:20px;
-  color: white;
+  background-color: var(--main-color-btn-text);
+  margin-top: 20px;
+  color: var(--btn-color);
   padding: 15px 20px;
-  border: none;
+  border: var(--btn-border);
   border-radius: 4px;
   cursor: pointer;
   font-size: 1em;
@@ -268,7 +267,7 @@ textarea {
 }
 .theme-toggle {
   background-color: transparent;
-  border:none;
+  border: none;
   cursor: pointer;
 }
 .theme-toggle:hover {

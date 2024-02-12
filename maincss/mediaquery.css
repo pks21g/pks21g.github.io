@@ -43,7 +43,10 @@
     }
   }
 
-  @media (mix-width: 290px) and (max-width: 450px) {
+  @media (min-width: 290px) and (max-width: 450px) {
+    .nav-branding{
+      font-size: 1.7rem;
+    }
     .container{
       padding:0 20px;
     }

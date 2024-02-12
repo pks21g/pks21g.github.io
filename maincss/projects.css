@@ -1,7 +1,5 @@
-/* .projects-section{
-  background-color: #fbfbf9;
-  width: 100%;
-} */
+.projects-section{
+}
 .projects {
   
   display: grid;
@@ -9,9 +7,8 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin:auto 50px 50px;
-  /* margin-top: 50px;
-  margin-bottom: 50px; */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* .project:nth-child(2){

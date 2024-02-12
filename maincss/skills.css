@@ -1,0 +1,52 @@
+.blank{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100svh;
+  width: 100%;
+  background-color:rgba(244, 244, 244, 0.1);
+  transform-origin:top right;
+  transform:skewX(-25deg);
+  /* transform: skewX(-10deg); */
+}
+.blank-project{
+  height: 140px;
+  background-color: white;
+  transform: skewY(1deg);
+}
+.skills-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  /* padding:100px 0; */
+  background-color: #fff;
+}
+
+.skills{
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  
+}
+.skills-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.skills:nth-child(1){
+  margin-top: 100px;
+}
+
+
+.card{
+  background-color: #aaa;
+
+}
