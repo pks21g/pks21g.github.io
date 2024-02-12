@@ -56,9 +56,8 @@
   .theme-toggle{
    position: absolute;
    right:25px;
-   top:80px;
+   top:60px;
    z-index: -1;
-   /* font-size: 2rem; */
   }
   .fa-moon{
     font-size: 2rem;

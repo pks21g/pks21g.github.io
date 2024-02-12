@@ -56,11 +56,9 @@ a {
   color: dodgerblue;
 }
 
-.fa-moon, .fa-lightbulb{
+.fa-moon, #fa-lightbulb{
   color: var(--main-color-text);
   font-size: 1.5rem;
-  transform: rotate(180deg);
-  /* padding-top: 4px; */
 }
 
 .hamburger {
