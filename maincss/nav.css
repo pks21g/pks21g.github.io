@@ -52,7 +52,7 @@ a {
 .nav-link {
   transition: 0.7s ease-in-out;
 }
-.nav-link:hover {
+.nav-link:hover,  #fa-lightbulb:hover {
   color: dodgerblue;
 }
 
