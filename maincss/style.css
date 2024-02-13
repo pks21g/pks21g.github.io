@@ -18,6 +18,16 @@
   --subheading-color: #5efc8d;
   --card-background-color: #fff;
   --contact-form-border:1px solid #333;
+
+  --background: hsla(197, 74%, 43%, 1);
+
+--background-ln: linear-gradient(90deg, hsla(197, 74%, 43%, 1) 0%, hsla(27, 81%, 58%, 1) 100%);
+
+--background-moz: -moz-linear-gradient(90deg, hsla(197, 74%, 43%, 1) 0%, hsla(27, 81%, 58%, 1) 100%);
+
+--background-web: -webkit-linear-gradient(90deg, hsla(197, 74%, 43%, 1) 0%, hsla(27, 81%, 58%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1C90BF", endColorstr="#EB8A3D", GradientType=1 );
 }
 * {
   padding: 0;
@@ -286,24 +296,70 @@ textarea {
 
 .skill{
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background-color: var(--card-background-color);
+  /* background-color: var(--card-background-color); */
   color: #000000;
   padding: 30px 20px;
   gap:30px;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  background: var(--background);
+  background: var(--background-ln);
+  background: var(--background-moz);
+  background: var(--background-web);
+  
+
+
+
+}
+
+.skill-gradiant{
+  background: hsla(0, 0%, 37%, 1);
+
+  background: linear-gradient(90deg, hsla(0, 0%, 37%, 1) 0%, hsla(59, 30%, 49%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 37%, 1) 0%, hsla(59, 30%, 49%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 37%, 1) 0%, hsla(59, 30%, 49%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5E5E5E", endColorstr="#A4A358", GradientType=1 );
+  padding: 4px;
 }
 
 .skills ul{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap:15px;
   font-size: 1.2rem;
+  color: #3f3e3e;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
+.skill ul li{
+  border-bottom: 2px solid rgb(170, 167, 167, .5);
+  border-right: 2px solid rgba(170, 167, 167, .5);
+  width: 100%;
+  padding:2px 0;
+}
+
 .skill h1{
+  font-size: 1.7rem;
   margin:0 auto;
 }
+
+.skill-heading{
+  width: 100%;
+  height:70px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+/* .java{
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+} */
