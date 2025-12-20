@@ -1,0 +1,173 @@
+<!-- =============================
+FILE: about.html
+Ma Chamunda Charitable Trust – About Page
+Aligned with 12A / 80G Language
+============================= -->
+<!DOCTYPE html>
+<html lang="en" lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ma Chamunda Charitable Trust</title>
+    <link rel="stylesheet" href="/machamund/styles/styles.css" />
+    <link rel="stylesheet" href="/machamund/styles/aboutstyle.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <script>
+      function togglelang(l) {
+        document.querySelectorAll("[data-en]").forEach((e) => {
+          e.innerText = e.dataset[l];
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="Group 17.svg" alt="" />
+      </div>
+      <nav class="container flex">
+        <ul>
+          <li>
+            <a href="index.html" data-en="Home" data-hi="मुखपृष्ठ">Home</a>
+          </li>
+          <li>
+            <a href="about.html" data-en="About" data-hi="हमारे बारे में"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="programs.html" data-en="Programs" data-hi="कार्यक्रम"
+              >Programs</a
+            >
+          </li>
+          <li>
+            <a href="donate.html" data-en="Donate" data-hi="दान करें">Donate</a>
+          </li>
+          <li>
+            <a href="contact.html" data-en="Contact" data-hi="संपर्क"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger-menu">
+          <div class="dots"></div>
+          <div class="dots"></div>
+          <div class="dots"></div>
+        </div>
+        <div class="lang">
+          <span onclick="togglelang('en')">EN</span> |
+          <span onclick="togglelang('hi')">हिंदी</span>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="container flex">
+        <div class="sloka">
+          <p>
+            न चोरहार्यं न च राजहार्यं न भ्रातृभाज्यम् न च भारकारी । व्यये कृते
+            वर्धत एव नित्यं विद्याधनं सर्वधनप्रधानम् ॥<br />
+          </p>
+          <p id="english-meaning">
+            <span>
+              The wealth of knowledge is indeed the supreme among all wealths as
+              it is not stealable by thief, also not snatchable by king, not
+              divisible among the brothers, nor is it a burden and if spent, it
+              always increases.
+            </span>
+          </p>
+        </div>
+        <!-- <div class="hero-btn-msg">
+          <div class="donation">
+            <div class="donation-message">
+              <h4>Various ways you can make a difference</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                laboriosam.
+              </p>
+            </div>
+            <div class="donation-button outline">
+              <a href="donation.html">Donate</a>
+            </div>
+          </div>
+          <div class="programs">
+            <div class="program-message">
+              <h4>Check out what we offer in our community</h4>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                laboriosam.
+              </p>
+            </div>
+            <div class="programs-button outline">
+              <a href="programs.html">Programs</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="about-section">
+          <div class="about-message">
+            <p>
+              Ma Chamunda Charitable Trust is a non-profit educational
+              organization committed to empowering children and youth from
+              economically weaker and underserved communities through education,
+              skill development, digital literacy, and value-based guidance. The
+              Trust works to provide academic support, learning resources, and
+              access to technology to needy students, enabling them to achieve
+              self-reliance and holistic growth. Guided by principles of
+              integrity, inclusiveness, and social responsibility, the Trust
+              operates solely for charitable purposes without discrimination and
+              is dedicated to the transparent and ethical utilization of
+              resources for the welfare of society.
+            </p>
+          </div>
+        </div>
+        <div class="books">
+          <img src="books.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="mission">
+      <div class="container flex">
+        <div class="mission-message">
+          <p id="mission-message">
+            <span class="mission"> Mission Statement<br /> </span>At Chamunda
+            Trust, our vision is to provide education to those who need the
+            most. We invision future where every to advance in their goals.
+            child has the tools and technology
+            <a href="/mission.html">read more...</a>
+          </p>
+        </div>
+        <div class="mission-image">
+          <img id="mission" src="mission.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <footer class="foot-nav">
+      <div class="container flex">
+        <div class="footor-logo">
+          <img src="/machamund/assets/logo.svg" alt="" />
+        </div>
+        <div class="contact">
+          <h3>Contact Us</h3>
+          <ul class="flex">
+            <li>Phone Number</li>
+            <li>Email</li>
+            <li>Web Form</li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <h3>Follow US</h3>
+          <ul class="flex">
+            <li>Youtube</li>
+            <li>Facebook</li>
+            <li>X</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <small>© 2025 Ma Chamunda Charitable Trust</small>
+      </div>
+    </footer>
+  </body>
+</html>
